@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { Input } from '@/components/ui/input'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu, Search } from 'lucide-react'
+import { Menu, Search, User } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const Header = () => {
@@ -37,7 +37,8 @@ export const Header = () => {
             </SheetContent>
           </Sheet>
           <h1 className="text-xl font-semibold text-[#1A1D1F]">{title}</h1>
-          <Image src="/images/1.jpg" alt="Profile" width={40} height={40} className="rounded-full" />
+          {/* <Image src="" alt="Profile" width={40} height={40} className="rounded-full" /> */}
+          <User/>
         </div>
         <div className="px-4 pb-4">
           <SearchBar />
@@ -55,8 +56,8 @@ export const Header = () => {
             <Button variant="ghost" size="icon" className="rounded-full bg-[#f5f7fa] hover:bg-[#F4F4F4]">
               <Image src="/svgs/notification.svg" width={22} height={22} alt="notification-icon" />
             </Button>
-            <Image src="/images/1.jpg" alt="Profile" width={44} height={44} className="rounded-full" />
-          </div>
+            <div className='border border-gray-500 rounded-full p-1 hover:bg-primary '><User/></div>
+            </div>
         </div>
       </div>
     </header>
