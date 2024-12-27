@@ -1,6 +1,64 @@
 {
   "version": 3,
-  "middleware": {},
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/settings(.json)?[\\/#\\?]?$",
+          "originalSource": "/settings"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/dashboard(.json)?[\\/#\\?]?$",
+          "originalSource": "/dashboard"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/transactions(.json)?[\\/#\\?]?$",
+          "originalSource": "/transactions"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/accounts(.json)?[\\/#\\?]?$",
+          "originalSource": "/accounts"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/investments(.json)?[\\/#\\?]?$",
+          "originalSource": "/investments"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/credit-cards(.json)?[\\/#\\?]?$",
+          "originalSource": "/credit-cards"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/loans(.json)?[\\/#\\?]?$",
+          "originalSource": "/loans"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/services(.json)?[\\/#\\?]?$",
+          "originalSource": "/services"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/privileges(.json)?[\\/#\\?]?$",
+          "originalSource": "/privileges"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "RFuxE9ha8EML15bTdNvZQ",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "K3BcLG39znZXFiuazK8UDp26bjW0QB6xZGgJNcPNUtg=",
+        "__NEXT_PREVIEW_MODE_ID": "e2febaf21f7d2ed2e009a65002158b2d",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "4e46d7a8df8ff55e058b3058beb3ec7aca9ce3f5fa2e33ffbbe2daefddec9127",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "ae543334f7163c975f2478b0c4207ea6754d2ffae7cf19a16d41d466430244cf"
+      }
+    }
+  },
   "functions": {},
-  "sortedMiddleware": []
+  "sortedMiddleware": [
+    "/"
+  ]
 }
