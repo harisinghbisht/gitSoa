@@ -1,0 +1,11 @@
+{
+  "/page": "app/page.js",
+  "/api/card/route": "app/api/card/route.js",
+  "/cards/page": "app/cards/page.js",
+  "/api/transactions/route": "app/api/transactions/route.js",
+  "/api/weekly-activity/route": "app/api/weekly-activity/route.js",
+  "/api/balance-history/route": "app/api/balance-history/route.js",
+  "/api/expense-statistics/route": "app/api/expense-statistics/route.js",
+  "/api/quick-transfer/route": "app/api/quick-transfer/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}
