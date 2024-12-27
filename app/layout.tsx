@@ -6,8 +6,8 @@ import { UserProvider } from '@/contexts/providers/UserProvider'
 import { DashboardLayout } from './components/DashboardLayout'
 
 export const metadata: Metadata = {
-  title: 'Soar Task',
-  description: 'Soar Task',
+  title: 'Soar ',
+  description: 'Soar assignment',
 }
 
 export default function RootLayout({
